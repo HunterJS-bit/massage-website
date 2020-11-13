@@ -35,3 +35,26 @@ p {
 .social {
    background-color: #2a2a2c; 
 }
+
+.feature-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #fa5079;
+}
+
+.massage-card:hover {
+    transition: all 0.3s;
+    background-color: #fa5079;
+}
+
+.massage-card:hover .feature-icon svg {
+    fill: #fff;
+}
+
+.massage-card:hover .card-title {
+    color: #dedede;
+}
+
+.massage-card:hover .card-subtitle{
+    color: #eee;
+}
