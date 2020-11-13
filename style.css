@@ -81,10 +81,22 @@ p {
 }
 
 .blog-title {
-    color: #323232;
-    font-size: 3.222em;
-    font-weight: 300;
-    text-transform: uppercase;
-    line-height: 1.2em;
-    letter-spacing: 5.8px;
+    font-family: 'Dancing Script', Georgia, Times, serif;
+}
+
+
+.checklist p.checklist-item:before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.25 7.105a.14.14 0 01-.193 0L2.459 3.6 0 5.999l3.597 3.508L6.154 12 16 2.397 13.539 0 6.25 7.105z' fill='%2355B891' fill-rule='evenodd'/%3E%3C/svg%3E");
+
 }
