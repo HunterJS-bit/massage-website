@@ -58,3 +58,33 @@ p {
 .massage-card:hover .card-subtitle{
     color: #eee;
 }
+
+.appointment-button{
+    font-size: 0.611em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    letter-spacing: 2.2px;
+    color: #FFFFFF;
+    background-color: #ff9bb3;
+    border: 1px solid #ff9bb3;
+    border-radius: 0px 0px 0px 0px;
+    padding: 24px 87px 24px 87px;
+    transition: all 0.7s;
+    outline: none;
+}
+
+.appointment-button:hover {
+    color: #ff9bb3;
+    background-color: transparent;
+    border-color: #ffff;
+}
+
+.blog-title {
+    color: #323232;
+    font-size: 3.222em;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    letter-spacing: 5.8px;
+}
