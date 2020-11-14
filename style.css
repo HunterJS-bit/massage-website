@@ -80,6 +80,9 @@ p {
     border-color: #ffff;
 }
 
+.blog-section {
+    background-color: #F8F8F8;
+}
 .blog-title {
     font-family: 'Dancing Script', Georgia, Times, serif;
 }
@@ -99,4 +102,43 @@ p {
     left: 0;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.25 7.105a.14.14 0 01-.193 0L2.459 3.6 0 5.999l3.597 3.508L6.154 12 16 2.397 13.539 0 6.25 7.105z' fill='%2355B891' fill-rule='evenodd'/%3E%3C/svg%3E");
 
+}
+
+
+.contact-button {
+    background: transparent;
+    border: 1px solid #e05a7b;
+    color: #1a1a1a;
+}
+img.alignnone {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.line-ef {
+    max-width: 280px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.line-ef:before  {
+    position: absolute;
+    content: " ";
+    width: 100px;
+    height: 1px;
+    background-color: #c1bfda;
+    left: 0px;
+    top: 61%;
+}
+.line-ef:after {
+    position: absolute;
+    content: " ";
+    width: 100px;
+    height: 1px;
+    background-color: #c1bfda;
+    top: 61%;
+}
+.line-ef:after {
+    right: 0;
 }
