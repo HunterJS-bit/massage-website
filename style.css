@@ -33,7 +33,7 @@ p {
 }
 
 .social {
-   background-color: #2a2a2c; 
+   background-color: #f6f6f6; 
 }
 
 .feature-icon svg {
@@ -144,4 +144,12 @@ img.alignnone {
 }
 .line-ef:after {
     right: 0;
+}
+
+.testemonials {
+    background-image: url(http://massage-therapist.ancorathemes.com/wp-content/uploads/2016/08/test_bg.jpg?id=494) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
 }
