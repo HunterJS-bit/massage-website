@@ -104,11 +104,14 @@ p {
 
 }
 
+footer {
+    background-color: #2a2d2c;
+}
 
 .contact-button {
     background: transparent;
     border: 1px solid #e05a7b;
-    color: #1a1a1a;
+    color: #e05a7b;
 }
 img.alignnone {
     margin: 0 auto;
