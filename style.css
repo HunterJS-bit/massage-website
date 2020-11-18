@@ -146,6 +146,18 @@ img.alignnone {
     right: 0;
 }
 
+.about-title {
+    font-size: 59px;
+    font-weight: 700;
+}
+
+.about-section {
+    background-color: #fff8f5;
+    background-image: url(https://w4.foxdsgn.com/rela/wp-content/uploads/2019/09/bg-home2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 .testemonials {
     background-image: url(http://massage-therapist.ancorathemes.com/wp-content/uploads/2016/08/test_bg.jpg?id=494) !important;
     background-position: center !important;
