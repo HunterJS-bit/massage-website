@@ -116,7 +116,7 @@ p {
 }
 
 footer {
-    background-color: #2a2d2c;
+    background-color: #222a3e;
 }
 
 .contact-button {
@@ -171,4 +171,25 @@ img.alignnone {
     background-repeat: no-repeat !important;
     background-size: cover !important;
 
+}
+
+.gallery-images {
+    margin-top: -110px;
+}
+
+.pink-wrapper {
+    background-color: #fc84b4;
+}
+
+.subheading {
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.contact {
+    background-image: url(https://aviana.qodeinteractive.com/wp-content/uploads/2017/09/h1-parallax-3.jpg);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
