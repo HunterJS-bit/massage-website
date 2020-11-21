@@ -116,12 +116,24 @@ p {
 }
 
 footer {
-    background-color: #222a3e;
+    background-color: #fff;
+}
+
+#navigation {
+    transition: 0.3s all;
 }
 
 .contact-button {
     background: transparent;
     border: 1px solid #e05a7b;
+    color: #fff;
+    background-color: #e05a7b;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.contact-button:hover {
+    background-color: #fff;
     color: #e05a7b;
 }
 img.alignnone {
