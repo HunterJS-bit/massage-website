@@ -1,5 +1,5 @@
 .main-section {
-    background-image: url('./img/slider-3_img_1.jpg');background-position: center;
+    background-image: url('https://pur.vamtam.com/wp-content/uploads/2018/01/slide-3.jpg');background-position: center;
     width: 100%;
     height: 100%;
     position: relative;
@@ -189,6 +189,16 @@ img.alignnone {
 
 .contact {
     background-image: url(https://aviana.qodeinteractive.com/wp-content/uploads/2017/09/h1-parallax-3.jpg);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.sticky {
+    position: fixed;
+}
+
+.bg-image {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;

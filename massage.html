@@ -85,7 +85,7 @@
         </div>
       </div>
     </div>
-    <nav
+    <nav id="navigation"
       class="z-10 w-full bg-white top-0 flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg shadow-lg">
       <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"><button
@@ -129,7 +129,7 @@
   </div>
   </nav>
   <section class="relative flex flex-wrap justify-center w-full overflow-hidden md:flex-row">
-    <div class="main-section">
+    <div class="main-section bg-image">
       <div class="pt-12 pb-24 lg:pt-48 lg:pb-48 relative">
         <div class="container mx-auto">
           <div class="text-center mx-auto md:max-w-4xl">
@@ -689,5 +689,23 @@
   </div>
 
 </body>
+<script>
+  window.onscroll = function () { myFunction() };
+
+  // Get the header
+  var header = document.getElementById("navigation");
+
+  // Get the offset position of the navbar
+  var sticky = header.offsetTop;
+
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+</script>
 
 </html>
