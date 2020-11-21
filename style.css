@@ -33,7 +33,18 @@ p {
 }
 
 .social {
-   background-color: #f6f6f6; 
+   background-color: #222a3e; 
+}
+
+
+.blue-color {
+  color: #222a3e;
+}
+
+.about-title {
+    color: #222a3e;
+    font-size: 59px;
+    font-weight: 700;
 }
 
 .feature-icon svg {
@@ -146,10 +157,6 @@ img.alignnone {
     right: 0;
 }
 
-.about-title {
-    font-size: 59px;
-    font-weight: 700;
-}
 
 .about-section {
     background-color: #fff8f5;
