@@ -200,7 +200,7 @@ img.alignnone {
 }
 
 .contact {
-    background-image: url(https://aviana.qodeinteractive.com/wp-content/uploads/2017/09/h1-parallax-3.jpg);
+    background-image: url('./img/h1-parallax-3.jpg');
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
