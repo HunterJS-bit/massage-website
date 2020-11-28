@@ -25,29 +25,33 @@
       <div class="h-0 top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
         <div
           class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
-          <a href="#"
+          <a href="/"
             class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-600 focus:outline-none">
             <span>Home</span>
           </a>
-          <a href="#"
+          <a href="#therapy"
             class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-600 focus:outline-none">
             <span>Terapije</span>
           </a>
-          <a href="#"
+          <a href="#clients"
             class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-600 focus:outline-none">
-            <span>Relax</span>
+            <span>Klijenti</span>
           </a>
-          <a href="#"
+          <a href="#team"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-600 focus:outline-none">
+            <span>O Nama</span>
+          </a>
+          <a href="#blog"
             class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-600 focus:outline-none">
             <span>Blog</span>
           </a>
-          <a href="#"
+          <a href="#gallery"
             class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-600 focus:outline-none">
             <span>Galerija</span>
           </a>
-          <button type="button"
+          <button type="button" onClick="navigate('#contact')"
             class="rounded-full bg-red-600 text-white active:bg-red-600 text-xs font-bold uppercase px-6 py-2 rounded contact-button hover:shadow-md outline-none focus:outline-none text-gray-100 lg:mr-1 lg:mb-0 ml-3 mb-3">
-            Kontakt <i class="fas fa-arrow-right"></i>
+            Kontakt
 
           </button></li>
         </div>
@@ -75,7 +79,7 @@
 
     </section>
 
-    <section class="text-gray-700 body-font">
+    <section id="therapy" class="text-gray-700 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="text-center mb-20">
           <h1 class="sm:text-6xl text-2xl font-medium title-font text-gray-900 mb-4">Dobro Dosli u Nirvana Studio</h1>
@@ -216,7 +220,7 @@
     </div>
   </section>
 
-  <section class="testemonials">
+  <section id="clients" class="testemonials">
     <div class="container px-5 py-24 mx-auto">
       <h3 class="mb-4 text-3xl leading-snug text-center text-white lg:text-6xl blog-title">Šta Naši Gosti Kažu O
         Nama ?</h3>
@@ -254,7 +258,7 @@
 
     </div>
   </section>
-  <section class="team">
+  <section id='team' class="team">
     <div class="container px-5 py-24 pb-0 mx-auto">
       <h3 class="mb-4 text-3xl leading-snug text-center lg:text-6xl blog-title blue-color">Nas Tim</h3>
       <div class="after-wrapper">
@@ -286,7 +290,7 @@
     </div>
 
   </section>
-  <section class="blog-section">
+  <section id="blog" class="blog-section">
     <div class="container px-5 py-24 mx-auto">
       <h3 class="mb-4 text-3xl leading-snug text-center lg:text-6xl blog-title blue-color">Nas Blog</h3>
       <div class="after-wrapper">
@@ -419,7 +423,7 @@
     </div>
 
   </section>
-  <section class="contact px-5 py-24">
+  <section id="contact" class="contact px-5 py-24">
     <div class="relative flex items-top justify-center sm:items-center py-16">
       <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div class="mt-8 overflow-hidden">
@@ -598,11 +602,16 @@
 
 </body>
 <script>
+
+  /** Responsive mobile navigation **/
+
   const menu = document.getElementById('menu');
   const nav = document.getElementById('navigation');
   menu.addEventListener('click', () => {
     nav.classList.toggle("height-250");
   })
+
+  /*** On Scroll Header navigation ***/
 
   let scrollpos = window.scrollY;
   const header = document.getElementById("header");
@@ -617,8 +626,20 @@
     else {
       header.classList.remove('sticky');
     }
-    console.log(scrollpos);
   });
+
+
+  /*** Link Click scroll ***/
+
+
+  const navigate = (section) => {
+
+    const offsetTop = document.querySelector(section).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+
+
 </script>
 
 </html>

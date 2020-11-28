@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .main-section {
     background-image: url('https://pur.vamtam.com/wp-content/uploads/2018/01/slide-3.jpg');background-position: center;
     width: 100%;
@@ -130,10 +134,12 @@ footer {
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
-/* #header.sticky a {
-    color: red;
 
-} */
+
+#header.sticky #navigation a {
+    color: #1a202c;
+
+}
 
 .contact-button {
     background: transparent;
