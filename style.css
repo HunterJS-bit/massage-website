@@ -3,7 +3,7 @@ html {
 }
 
 .main-section {
-    background-image: url('https://pur.vamtam.com/wp-content/uploads/2018/01/slide-3.jpg');background-position: center;
+    background-image: url('./img/header_image_massage.jpg');background-position: center;
     width: 100%;
     height: 100%;
     position: relative;
@@ -148,6 +148,7 @@ footer {
     background-color: #e05a7b;
     letter-spacing: 1px;
     outline: none;
+    transition: all 0.3s;
 }
 
 .contact-button:hover {
@@ -190,13 +191,13 @@ img.alignnone {
 
 .about-section {
     background-color: #fff8f5;
-    background-image: url(https://w4.foxdsgn.com/rela/wp-content/uploads/2019/09/bg-home2.png);
+    background-image: url('/img/about_cvece.png');
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .testemonials {
-    background-image: url(http://massage-therapist.ancorathemes.com/wp-content/uploads/2016/08/test_bg.jpg?id=494) !important;
+    background-image: url('./img/fizioterapija_klijenti.jpg') !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
