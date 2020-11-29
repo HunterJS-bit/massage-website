@@ -140,6 +140,10 @@ footer {
     color: #1a202c;
 }
 
+#header.sticky #navigation .contact-button:hover {
+    color: #e05a7b;
+}
+
 .contact-button {
     background: transparent;
     border: 1px solid #e05a7b;
@@ -155,6 +159,11 @@ footer {
     box-shadow: none;
     color: #fff;
 }
+
+.bottom-contact:hover {
+    color: #e05a7b;
+}
+
 img.alignnone {
     margin: 0 auto;
     max-width: 100%;
