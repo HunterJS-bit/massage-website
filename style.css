@@ -135,6 +135,10 @@ footer {
 }
 
 
+#navigation {
+  transition: height 0.3s  ease-out;
+}
+
 
 #header.sticky #navigation a {
     color: #1a202c;
@@ -254,6 +258,7 @@ img.alignnone {
     height: 250px;
     overflow: visible;
     background-color: #fff;
+    /* display: block; */
 }
 
 .slika {

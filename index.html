@@ -12,40 +12,45 @@
 
 <body>
   <div className="App">
-    <nav id="header" class=" z-10 absolute w-full flex items-center transparent px-32 py-3 flex-wrap">
+    <nav id="header"
+      class=" z-10 lg:absolute w-full flex items-center sm:bg-white lg:bg-transparent px-32 py-3 sm:pb-5 flex-wrap">
       <a href="#" class="p-2 mr-4 inline-flex items-center">
         <img width="150" class="max-w-full h-auto align-middle border-none" src="./img/logo.png">
       </a>
       <button
-        class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+        class="text-white inline-flex p-3 hover:bg-gray-100 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
         id="menu">
-        <i class="material-icons">menu</i>
+        <svg viewBox="0 0 100 80" width="40" height="40">
+          <rect width="100" height="15"></rect>
+          <rect y="30" width="100" height="15"></rect>
+          <rect y="60" width="100" height="15"></rect>
+        </svg>
       </button>
       <div class="h-0 top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
         <div
-          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto sm:mt-3 lg:mt-0">
           <a href="/"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-500 focus:outline-none">
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 sm:text-gray-800 hover:text-gray-500 focus:outline-none">
             <span>Home</span>
           </a>
           <a href="#therapy"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-600 focus:outline-none">
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 sm:text-gray-800 hover:text-gray-600 focus:outline-none">
             <span>Terapije</span>
           </a>
           <a href="#clients"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-600 focus:outline-none">
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 sm:text-gray-800 hover:text-gray-600 focus:outline-none">
             <span>Klijenti</span>
           </a>
           <a href="#team"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-600 focus:outline-none">
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 sm:text-gray-800 hover:text-gray-600 focus:outline-none">
             <span>O Nama</span>
           </a>
           <a href="#blog"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-600 focus:outline-none">
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 sm:text-gray-800 hover:text-gray-600 focus:outline-none">
             <span>Blog</span>
           </a>
           <a href="#gallery"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 hover:text-gray-600 focus:outline-none">
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold text-gray-100 sm:text-gray-800 hover:text-gray-600 focus:outline-none">
             <span>Galerija</span>
           </a>
           <button type="button" onClick="navigate('#contact')"
