@@ -124,10 +124,16 @@ footer {
 }
 
 #header {
-    transition: all 0.3s;
+  transition: height 0.3s  ease-out;
 }
-@media (min-width: 1024px) {
-  .sticky {
+@media (max-width: 640px) {
+  #header.scroll  #navigation {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .scroll {
       position: fixed;
       height: 80px;
       background: #fff;
@@ -141,11 +147,11 @@ footer {
 }
 
 
-#header.sticky #navigation a {
+#header.scroll #navigation a {
     color: #1a202c;
 }
 
-#header.sticky #navigation .contact-button:hover {
+#header.scroll #navigation .contact-button:hover {
     color: #e05a7b;
 }
 
@@ -224,6 +230,10 @@ img.alignnone {
 
 .pink-wrapper {
     background-color: #fc84b4;
+}
+
+.color-pink {
+  color: #fb4d77;
 }
 
 .subheading {
@@ -469,7 +479,7 @@ blockquote {
     .mySlider {
       position : relative;
       width : 100%;
-      height : 400px;
+      height : 550px;
     }
     
     .slider > div { padding: 0 2% }
