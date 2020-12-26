@@ -2,8 +2,7 @@
 
 <head>
   <title>Massage Website</title>
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.7.6/tailwind.min.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
 
@@ -13,7 +12,7 @@
 <body>
   <div className="App">
     <nav id="header"
-      class=" z-10 lg:absolute w-full flex items-center sm:bg-white lg:bg-transparent px-32 py-3 sm:pb-5 flex-wrap">
+      class="z-10 lg:absolute w-full flex items-center sm:bg-white lg:bg-transparent px-32 py-3 flex-wrap">
       <a href="#" class="p-2 mr-4 inline-flex items-center">
         <img width="150" class="max-w-full h-auto align-middle border-none" src="./img/logo.png">
       </a>
@@ -82,11 +81,11 @@
       </div>
 
     </section>
-
+    <!-- 
     <section id="therapy" class="text-gray-700 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="text-center mb-20">
-          <h1 class="sm:text-6xl text-2xl font-medium title-font text-gray-900 mb-4">Dobro Dosli u Nirvana Studio</h1>
+          <h1 class="text-2xl text-8xl font-medium text-gray-900 mb-4">Dobro Dosli u Nirvana Studio</h1>
           <div class="after-wrapper">
             <div class="line-ef text-center"><img class="alignnone size-full wp-image-59" src="./img/bottom_flower.png"
                 alt="" width="41" height="17"></div>
@@ -98,11 +97,11 @@
 
 
 
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-1">
+        <div class="grid lg:grid-cols-3 gap-4 sm:grid-cols-1">
 
           <div class="p-2 sm:p-5 mx-auto text-center cursor-pointer">
             <div
-              class="massage-card py-16 max-w-lg rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
+              class="massage-card py-16 sm:max-w-lg rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
               <div class="space-y-10">
                 <div class="w-1/4 mx-1 mx-auto h-20 feature-icon">
                   <?xml version="1.0"?>
@@ -132,7 +131,7 @@
           </div>
 
           <div class="p-2 sm:p-5 mx-auto text-center cursor-pointer">
-            <div class="massage-card py-16 max-w-lg rounded overflow-hidden shadow-lg">
+            <div class="massage-card py-16 sm:max-w-lg rounded overflow-hidden shadow-lg">
               <div class="space-y-10">
                 <div class="w-1/4 mx-1 mx-auto h-20 feature-icon">
                   <?xml version="1.0"?>
@@ -161,7 +160,7 @@
 
           <div class="p-2 sm:p-5 mx-auto text-center cursor-pointer">
             <div
-              class="massage-card py-16 max-w-lg rounded overflow-hidden shadow-lg hover:bg-white transition duration-500 bg-white ">
+              class="massage-card py-16 sm:max-w-lg rounded overflow-hidden shadow-lg hover:bg-white transition duration-500 bg-white ">
               <div class="space-y-10">
                 <div class="w-1/4 mx-1 mx-auto h-20 feature-icon">
                   <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
@@ -195,9 +194,8 @@
                   src="./img/bottom_flower.png" alt="" width="41" height="17"></div>
             </div>
             <div
-              class="flex flex-col md:flex-row items-center justify-between md:mt-10 w-full max-w-6xl mx-auto lg:pt-6 px-4">
+              class="flex lg:flex-row items-center justify-between md:mt-10 w-full max-w-6xl mx-auto lg:pt-6 px-4 sm:flex-col-reverse">
               <div class="flex-1 max-w-lg md:mt-4 text-center md:text-left">
-                <h2 class="about-title">O Meni</h2>
                 <p class="leading-relaxed my-8 text-lg font-light md:max-w-md">Zdravo ja sam Milos. Znam sve o masaži.
                   Znam
                   koje vrste masaže mogu
@@ -219,10 +217,10 @@
 
       </div>
 
-    </section>
+    </section> -->
     <section class="about-section">
-      <div class="max-w-screen-xl mx-auto py-12 flex flex-wrap mx-auto section square-section">
-        <div class="relative flex items-center justify-center w-full lg:w-1/2  h-64">
+      <div class="max-w-screen-xl mx-auto py-12 flex flex-wrap mx-auto h-full">
+        <div class="relative flex items-center justify-center w-full lg:w-1/2 h-full">
           <figure class="w-full h-full bg-center bg-no-repeat bg-cover lg:block slika show-on-scroll"
             style="background-image: url('./img/nirvana_fizioterapija.png');">
           </figure>
@@ -255,7 +253,7 @@
 
     <section id="clients" class="testemonials">
       <div class="container px-5 py-24 mx-auto">
-        <h3 class="mb-4 text-3xl leading-snug text-center text-white lg:text-6xl blog-title">Šta Naši Gosti Kažu O
+        <h3 class="mb-4 leading-snug text-center text-white text-6xl blog-title">Šta Naši Gosti Kažu O
           Nama ?</h3>
         <div class="after-wrapper">
           <div class="line-ef text-center"><img class="alignnone size-full wp-image-59" src="./img/bottom_flower.png"
