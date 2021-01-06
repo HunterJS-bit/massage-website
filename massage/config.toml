@@ -1,0 +1,41 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Nirvana Centar"
+[menu]
+  [[menu.main]]
+    name = "Home" #Name in the navigation bar
+    url = "/" #URL address
+    weight = 1
+  [[menu.main]]
+    identifier = "terapije"
+    name = "Terapije"
+    url = "/#terapije"
+    weight = 2
+  [[menu.main]]
+    identifier = "klijenti"
+    name = "klijenti"
+    url = "/#klijenti"
+    weight = 3
+  [[menu.main]]
+    identifier = "onama"
+    name = "O nama"
+    url = "/#onama"
+    weight = 4
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog"
+    weight = 5
+  [[menu.main]]
+    identifier = "galerija"
+    name = "Galerija"
+    url = "/#galerija"
+    weight = 6
+
+[params]
+    # My information
+    author = "Milos"
+    description = "Massage website"
+    bio = "Professional therapis"
+    twitter = "massage"
+    copyright = "Massage therapis"
