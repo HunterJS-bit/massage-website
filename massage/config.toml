@@ -1,6 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Nirvana Centar"
+paginate: 1
 [menu]
   [[menu.main]]
     name = "Home" #Name in the navigation bar

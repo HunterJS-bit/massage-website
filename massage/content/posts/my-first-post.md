@@ -2,8 +2,10 @@
 title: "My First Post"
 date: 2021-01-05T01:08:59+01:00
 draft: false
+image: "/images/book.jpg"
 ---
 
+ {{ .Site.Data }}
 This is the first paragraph of what I'd like to say.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
