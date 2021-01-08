@@ -1,24 +1,105 @@
 {{ define "main" }}
-<main>
-    <article>
-        <header>
-            <h1>{{.Title}}</h1>
-        </header>
-        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-        {{.Content}}
-    </article>
-    <ul>
-        <!-- Ranges through content/posts/*.md -->
-        {{ range .Pages }}
-        <li>
-            <img src="{{ .Params.Image }}" />
-            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-        </li>
-        {{ end }}
-    </ul>
+<div class="article-list md:pt-14">
+    <div class="my-4 border bg-gray-200">
+        <div class="container mx-auto p-12">
+            <div class="text-center">
+                <h1 class="text-2xl md:text-4xl font-bold  pb-4 text-blue-600"><a
+                        href="https://hieworks.com/blog">Blog</a></h1>
+                <h3 class="text-blue-700 font-semibold">Career tips and General Information</h3>
+            </div>
+        </div>
+    </div>
 
+    <div class="container mx-auto px-2 sm:px-0">
+        <div class="w-full flex justify-center mx-auto md:w-2/5 my-3" id="adb_v6"></div>
+        <div>
+            <ul class="text-gray-600">
+                <li>
+                    <a href="https://hieworks.com/blog" class="text-blue-700">Blog</a> »
+                </li>
+            </ul>
+        </div>
+        <div class="block md:flex">
+            <div class="w-full md:w-4/5">
 
+                {{ range .Paginator.Pages.ByDate.Reverse }}
+                <div class="block md:flex items-center bg-white text-gray-700 p-3 border my-2">
+                    <div class="w-full md:w-1/5">
+                        <img class="object-contain h-40 w-full" src="{{ .Params.Image }}" alt="article-thumbnail"
+                            title="article image">
+                    </div>
+                    <div class="w-full md:4/5">
+                        <div class="md:pl-4 my-3 text-blue-700">
+                            <a href="{{.Permalink}}" class="outline-none">{{.Title}}</a>
+                        </div>
+                        <div class="md:pl-4 article_description text-sm">
+                            <p>{{ .Summary }}
+                                <a href="{{.Permalink}}" class="read-more outline-none rounded-full">procitajte
+                                    vise...</a>
+                            </p>
+                        </div>
+                        <div class="text-right my-2 flex md:justify-end flex-wrap">
+                            <div class="bg-pink-200 text-sm px-3 py-1 m-2 rounded-full text-gray-600"><a
+                                    href="/blog">Blog</a></div>
+                            <div class="bg-teal-200 text-sm px-3 py-1 m-2 rounded-full text-gray-600">1mins read</div>
 
+                            <div
+                                class="flex items-center px-3 m-2 py-1 text-gray-500 text-xs font-semibold rounded-full">
+                                <div>
+                                    <svg fill="none" class="w-5 h-5" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path
+                                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>4 months ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+                {{ partial "pagination" .}}
+                <div class="w-full flex justify-center mx-auto md:w-2/5 my-3" id="adb_v7"></div>
+            </div>
+            <aside class="p-2 w-full md:w-1/4 bg-white">
+                <div class="flex justify-center my-4 pb-3">
+                    <span class="bg-blue-200 text-blue-700 text-center font-semibold text-lg w-full px-6 py-3"><a
+                            href="https://hieworks.com/jobs" class="outline-none block">view latest jobs
+                            today</a></span>
+                </div>
+                <div class="border rounded-md mb-6">
+                    <div class="text-center font-bold text-gray-600 text-sm bg-gray-100 p-4">
+                        Featured Posts
+                    </div>
+                    <a href="https://hieworks.com/post/understanding-the-clear-difference-between-a-cv-and-resume/MTQ="
+                        class="outline-none">
+                        <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
+                            » Understanding the Clear Difference between a CV and Resume
+                        </div>
+                    </a>
+                    <a href="https://hieworks.com/post/ghana-parliament-june-2020-job-vacancies/Mw=="
+                        class="outline-none">
+                        <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
+                            » Ghana Parliament June 2020 Job Vacancies
+                        </div>
+                    </a>
+                    <a href="https://hieworks.com/post/12-reasons-why-your-cv-will-get-rejected/Mg=="
+                        class="outline-none">
+                        <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
+                            » 12 Reasons Why Your CV Will Get Rejected
+                        </div>
+                    </a>
+                    <a href="https://hieworks.com/post/how-to-write-an-outstanding-nursing-resume/MQ=="
+                        class="outline-none">
+                        <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
+                            » How to write an outstanding nursing resume
+                        </div>
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </div>
 
-</main>
+</div>
 {{ end }}

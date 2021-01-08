@@ -1,15 +1,85 @@
 {{ define "main" }}
+<div class="container mx-auto sm:px-0 md:pt-14">
+    <div class="w-full md:w-2/5 my-3 flex justify-center mx-auto" id="adb_v8"></div>
+    <div>
+        <ul class="text-gray-600 text-xs breadcrumb pl-3">
+            <li><a href="/blog" class="text-blue-700 mini-title">Blog</a> » <span
+                    class="text-gray-700">{{ .Title }}</span></li>
+        </ul>
+    </div>
+    <div class="block md:flex">
+        <div class="w-full md:w-4/5">
+            <div class="block md:flex items-center bg-white text-gray-700 p-3 border my-2">
+                <div class="w-full">
+                    <div class="md:pl-4 flex flex-wrap justify-between">
+                        <div>
+                            <span
+                                class="text-sm text-right bg-orange-200 px-3 py-1 font-semibold rounded-full text-orange-700">{{ .Date.Format "January 2, 2006" }}</span>
+                        </div>
+                        <div>
+                            <span
+                                class="text-sm text-right bg-yellow-400 px-3 py-1 font-semibold rounded-full text-white">Blog</span>
+                        </div>
+                    </div>
+                    <div class="md:pl-4 my-3 text-blue-700">
+                        {{ .Title }}
+                    </div>
+                    <div class="md:pl-4 article_description text-sm">
 
-<div class="content">
-
-    <article>
-
-        <h1>{{ .Title }}</h1>
-
-        <p class="article-detail-date">{{ .Date.Format "January 2, 2006" }}</p>
-
-        {{ .Content }}
-
-    </article>
+                        {{ .Content }}
+                    </div>
+                    <div class="share_post my-6">
+                        <div class="my-3 flex justify-end items-center">
+                            <div id="fb-share-button">
+                                <svg viewBox="0 0 12 12" preserveAspectRatio="xMidYMid meet">
+                                    <path class="svg-icon-path"
+                                        d="M9.1,0.1V2H8C7.6,2,7.3,2.1,7.1,2.3C7,2.4,6.9,2.7,6.9,3v1.4H9L8.8,6.5H6.9V12H4.7V6.5H2.9V4.4h1.8V2.8 c0-0.9,0.3-1.6,0.7-2.1C6,0.2,6.6,0,7.5,0C8.2,0,8.7,0,9.1,0.1z">
+                                    </path>
+                                </svg>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-6 bg-white">
+                <div class="flex justify-center py-6">
+                    <span class="text-pink-500 border-pink-500 border-2 text-center rounded-full px-6 py-3"><a href="/"
+                            class="outline-none block capitalize">Zakazite
+                            Masazu</a></span>
+                </div>
+                <div class="w-full md:w-2/5 my-3 flex justify-center mx-auto" id="adb_v9"></div>
+            </div>
+        </div>
+        <aside class="mt-3 p-2 w-full md:w-1/4 bg-white">
+            <div class="border rounded-md mb-6">
+                <div class="text-center font-bold text-blue-700 text-sm bg-gray-100 p-4">
+                    Featured Posts
+                </div>
+                <a href="https://hieworks.com/post/understanding-the-clear-difference-between-a-cv-and-resume/MTQ="
+                    class="outline-none">
+                    <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
+                        » Understanding the Clear Difference between a CV and Resume
+                    </div>
+                </a>
+                <a href="https://hieworks.com/post/ghana-parliament-june-2020-job-vacancies/Mw==" class="outline-none">
+                    <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
+                        » Ghana Parliament June 2020 Job Vacancies
+                    </div>
+                </a>
+                <a href="https://hieworks.com/post/12-reasons-why-your-cv-will-get-rejected/Mg==" class="outline-none">
+                    <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
+                        » 12 Reasons Why Your CV Will Get Rejected
+                    </div>
+                </a>
+                <a href="https://hieworks.com/post/how-to-write-an-outstanding-nursing-resume/MQ=="
+                    class="outline-none">
+                    <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
+                        » How to write an outstanding nursing resume
+                    </div>
+                </a>
+            </div>
+        </aside>
+    </div>
 </div>
 {{ end }}
