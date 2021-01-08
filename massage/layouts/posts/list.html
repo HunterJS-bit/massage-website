@@ -3,9 +3,8 @@
     <div class="my-4 border bg-gray-200">
         <div class="container mx-auto p-12">
             <div class="text-center">
-                <h1 class="text-2xl md:text-4xl font-bold  pb-4 text-blue-600"><a
-                        href="https://hieworks.com/blog">Blog</a></h1>
-                <h3 class="text-blue-700 font-semibold">Career tips and General Information</h3>
+                <h1 class="text-2xl md:text-4xl font-bold  pb-4 text-gray-600"><a href="/blog">Blog</a></h1>
+                <h3 class="text-gray-400 font-semibold">Career tips and General Information</h3>
             </div>
         </div>
     </div>
@@ -15,7 +14,7 @@
         <div>
             <ul class="text-gray-600">
                 <li>
-                    <a href="https://hieworks.com/blog" class="text-blue-700">Blog</a> »
+                    <a href="/blog" class="text-blue-700">Blog</a> »
                 </li>
             </ul>
         </div>
@@ -24,11 +23,11 @@
 
                 {{ range .Paginator.Pages.ByDate.Reverse }}
                 <div class="block md:flex items-center bg-white text-gray-700 p-3 border my-2">
-                    <div class="w-full md:w-1/5">
+                    <div class="w-full md:w-2/5">
                         <img class="object-contain h-40 w-full" src="{{ .Params.Image }}" alt="article-thumbnail"
                             title="article image">
                     </div>
-                    <div class="w-full md:4/5">
+                    <div class="w-full md:3/5">
                         <div class="md:pl-4 my-3 text-blue-700">
                             <a href="{{.Permalink}}" class="outline-none">{{.Title}}</a>
                         </div>

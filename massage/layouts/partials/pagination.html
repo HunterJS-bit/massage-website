@@ -3,21 +3,33 @@
 {{ if gt $pag.TotalPages 1 }}
 <nav aria-label="Page navigation"
     class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
-    <ul class="pagination">
+    <ul class="pagination table border-collapse text-center bg-white mx-auto shadow-sm">
         {{ if $pag.HasPrev }}
-        <li class="page-item"><a href="{{ $pag.Prev.URL }}" rel="prev" class="page-link">&laquo; </a>
+        <li class="page-item w-8 h-8 border border-gray-300  table-cell align-middle hover:border-blue-100"><a
+                href="{{ $pag.Prev.URL }}" rel="prev"
+                class="page-link text-gray-700 hover:bg-blue-100 w-full h-full transition duration-100 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50">&laquo;
+            </a>
         </li>
         {{ end }}
         {{ range $pag.Pagers }}
         {{ if eq . $pag }}
-        <li class="page-item active"><a href="{{ .URL }}" class="page-link">{{ .PageNumber }}</a></li>
+        <li class="page-item active w-8 h-8 border border-gray-300 table-cell align-middle hover:border-blue-100"><a
+                href="{{ .URL }}"
+                class="page-link text-gray-700 hover:bg-blue-100 w-full h-full transition duration-100 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50">{{ .PageNumber }}</a>
+        </li>
         {{ else }}
-        <li class="page-item"><a href="{{ .URL }}" class="page-link">{{ .PageNumber }}</a></li>
+        <li class="page-item w-8 h-8 border border-gray-300 table-cell  align-middle hover:border-blue-100"><a
+                href="{{ .URL }}"
+                class="page-link text-gray-700 hover:bg-blue-100 w-full h-full transition duration-100 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50">{{ .PageNumber }}</a>
+        </li>
         {{ end }}
         {{ end }}
 
         {{ if $pag.HasNext }}
-        <li class="page-item"><a href="{{ $pag.Next.URL }}" rel="next" class="page-link"> &raquo;</a></li>
+        <li class="page-item w-8 h-8 border border-gray-300 align-middle table-cell hover:border-blue-100"><a
+                href="{{ $pag.Next.URL }}" rel="next"
+                class="page-link text-gray-700 hover:bg-blue-100 w-full h-full transition duration-100 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50">
+                &raquo;</a></li>
         {{ end }}
     </ul>
 </nav>
