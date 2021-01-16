@@ -1,85 +1,79 @@
 {{ define "main" }}
-<div class="container mx-auto sm:px-0 md:pt-14">
-    <div class="w-full md:w-2/5 my-3 flex justify-center mx-auto" id="adb_v8"></div>
-    <div>
-        <ul class="text-gray-600 text-xs breadcrumb pl-3">
-            <li><a href="/blog" class="text-blue-700 mini-title">Blog</a> » <span
-                    class="text-gray-700">{{ .Title }}</span></li>
-        </ul>
-    </div>
-    <div class="block md:flex">
-        <div class="w-full md:w-4/5">
-            <div class="block md:flex items-center bg-white text-gray-700 p-3 border my-2">
-                <div class="w-full">
-                    <div class="md:pl-4 flex flex-wrap justify-between">
-                        <div>
-                            <span
-                                class="text-sm text-right bg-orange-200 px-3 py-1 font-semibold rounded-full text-orange-700">{{ .Date.Format "January 2, 2006" }}</span>
-                        </div>
-                        <div>
-                            <span
-                                class="text-sm text-right bg-yellow-400 px-3 py-1 font-semibold rounded-full text-white">Blog</span>
-                        </div>
-                    </div>
-                    <div class="md:pl-4 my-3 text-blue-700">
-                        {{ .Title }}
-                    </div>
-                    <div class="md:pl-4 article_description text-sm">
-
-                        {{ .Content }}
-                    </div>
-                    <div class="share_post my-6">
-                        <div class="my-3 flex justify-end items-center">
-                            <div id="fb-share-button">
-                                <svg viewBox="0 0 12 12" preserveAspectRatio="xMidYMid meet">
-                                    <path class="svg-icon-path"
-                                        d="M9.1,0.1V2H8C7.6,2,7.3,2.1,7.1,2.3C7,2.4,6.9,2.7,6.9,3v1.4H9L8.8,6.5H6.9V12H4.7V6.5H2.9V4.4h1.8V2.8 c0-0.9,0.3-1.6,0.7-2.1C6,0.2,6.6,0,7.5,0C8.2,0,8.7,0,9.1,0.1z">
-                                    </path>
-                                </svg>
-                                <span>Share</span>
+<main class="sm:pt-17 pt-12">
+    <div class="mx-auto container">
+        <div>
+            <div class="my-5"><img class="rounded-lg mx-auto" src="{{ .Params.Image }}">
+            </div>
+        </div>
+        <div class="xl:w-2/3 w-full mx-auto mb-10">
+            <p class="font-bold text-2xl md:text-3xl lg:text-4xl text-center text-gray-900 mt-10"> {{ .Title }}</p>
+            <section class="markdown mt-16">
+                {{ .Content }}
+            </section>
+            <div class="flex justify-between items-center">
+                <div>
+                    <div>
+                        <div class="flex items-center my-6">
+                            <div class="flex-shrink-0">
+                                <div class="h-16 w-16 rounded-full mr-2 gatsby-image-wrapper"
+                                    style="position: relative; overflow: hidden;">
+                                    <div aria-hidden="true" style="width: 100%; padding-bottom: 100%;"></div><img
+                                        aria-hidden="true"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAABcRAAAXEQHKJvM/AAAAB3RJTUUH5AkYExYzZJQn3QAAA99JREFUGBklwctvVFUcAODze5x7Z+68O0xbKJ0qUEQUxNgYRYNgCFE0JLpg7cJE/wJNTIxx79qFiQv/CxcmBCRRE1AkxXYYO4U+melM5z333nPPw4LfB+9euYQyvddszc2U0kH61z+W3/rg48vXrre31hHs999+8dHViz4Te+RJT0pJUiIzPcOdTqd67ORC9chgMCgUi04IHYW//fjNLIzaw+j911/wJSIgISGRQARA+h8zn39jKeEM6jhJlPQ8a93G3RtfX1m89t71EFOrjce/1FtdZYAJiRARCJ8iYpZ4+04tMuiEQCKB4Jw7kXNnqpXIUrY8s3T2pVPz00hESHiAGQkRiZ/ymFh0uj0pzLEzS6PmxtJi9ZPXcqlUvvVovRgmSgidLiC28QA9g3yAiJEY37x46cWXTx3KSmZkJgyys5VDU1OVHGLOS6ezeRGFCIhExAek9CQzEzERoUV/bWVFa03MRLTZHizzXKOxqqxtNTe1da39LhIekEz5gKcyspTxsmkpGXl7p7549rSnwfO8kKXWCQpnrAFLTvo/3b63P1F+ymdCQrDWAgiPAYiUI1xfu9XbqavWIxUrJDI6eT4wYZJ0hd414s/6FhN6EpkcgnMCrHXMnGLMBmkuUjkjoFIM1lrN3cdbEmD+zLkCnJMq3i4ev/Xdz/XdeHG+vHAkP1v2wFnn7GA42laQZDXjfqe51f7nwdZq40kQZCvFKc9PtTl/c3X9lbMcBIVhjCtb4VrLXj5fniWtEzGO49ag45vDeOHTr54MqdXVhXwJEQ/PTAfTVRWGtdrDcDLOBOm076dSKSnl3YeDUNko0bExgZcaRz2cKQXRsO/7HhExcXX+iJR0595yEo36gyEhHUBiY914HK3smDBSxlgAoeIhbzY2nBMCHBNpIcqlHAA2Nze3h+XBeAIIiJT2uT8YE8v6Rt8DzgdJMxorqbl2/74T4KwhJgDIZ9JAvLIzrk6XJBhCem5+GpCa7X1AdIAPHvvHj2bKWVcuTmFzd08nCQgLQgCIUiEXDrrSjijpd3sjImps7j1sbPd63X9r94e99ng8/v2v9Vp96JFkIdBY5QkJQjhnAw8n+03p9N8bg2y5I4RQKlZaI1GOVa/TjMOJn8mJwsLN2jIicTgZCWEBQQg7OzcHfrDedScqHE36xhhnrTXGWcMicWoEJiwWS+niYZ1MoXVgBTqrnTFCiEyKTaIXKqmMz3t9pa0RQkzCSaJC59ypo8UvPzxdFu24uw1mwlE4MlpZqwGtcFa6OIpiMGblicinhkolwjkdh9Gwy6g/u3Dy+tW333m18/kPNx7tNv8DzSb4wAdDxLAAAAAASUVORK5CYII="
+                                        alt=""
+                                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 0; transition-delay: 500ms;">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="//images.ctfassets.net/yuqjxadbvgbj/1wThehoaRyXL5S2c81pI1E/6ec9a12f1b0e6055eb1765e803531754/dawid_rubin.png?w=96&amp;h=96&amp;q=50&amp;fm=webp 96w"
+                                            sizes="(max-width: 800px) 100vw, 800px">
+                                        <source
+                                            srcset="//images.ctfassets.net/yuqjxadbvgbj/1wThehoaRyXL5S2c81pI1E/6ec9a12f1b0e6055eb1765e803531754/dawid_rubin.png?w=96&amp;h=96&amp;q=50 96w"
+                                            sizes="(max-width: 800px) 100vw, 800px"><img
+                                            sizes="(max-width: 800px) 100vw, 800px"
+                                            srcset="//images.ctfassets.net/yuqjxadbvgbj/1wThehoaRyXL5S2c81pI1E/6ec9a12f1b0e6055eb1765e803531754/dawid_rubin.png?w=96&amp;h=96&amp;q=50 96w"
+                                            src="//images.ctfassets.net/yuqjxadbvgbj/1wThehoaRyXL5S2c81pI1E/6ec9a12f1b0e6055eb1765e803531754/dawid_rubin.png?w=800&amp;q=50"
+                                            alt="Zdjęcie Dawida Rubina - specjalisty od SEO i marketingu" loading="lazy"
+                                            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 500ms ease 0s;">
+                                    </picture><noscript>
+                                        <picture>
+                                            <source type='image/webp'
+                                                srcset="//images.ctfassets.net/yuqjxadbvgbj/1wThehoaRyXL5S2c81pI1E/6ec9a12f1b0e6055eb1765e803531754/dawid_rubin.png?w=96&h=96&q=50&fm=webp 96w"
+                                                sizes="(max-width: 800px) 100vw, 800px" />
+                                            <source
+                                                srcset="//images.ctfassets.net/yuqjxadbvgbj/1wThehoaRyXL5S2c81pI1E/6ec9a12f1b0e6055eb1765e803531754/dawid_rubin.png?w=96&h=96&q=50 96w"
+                                                sizes="(max-width: 800px) 100vw, 800px" /><img loading="lazy"
+                                                sizes="(max-width: 800px) 100vw, 800px"
+                                                srcset="//images.ctfassets.net/yuqjxadbvgbj/1wThehoaRyXL5S2c81pI1E/6ec9a12f1b0e6055eb1765e803531754/dawid_rubin.png?w=96&h=96&q=50 96w"
+                                                src="//images.ctfassets.net/yuqjxadbvgbj/1wThehoaRyXL5S2c81pI1E/6ec9a12f1b0e6055eb1765e803531754/dawid_rubin.png?w=800&q=50"
+                                                alt="Zdjęcie Dawida Rubina - specjalisty od SEO i marketingu"
+                                                style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
+                                        </picture>
+                                    </noscript>
+                                </div>
+                            </div>
+                            <div class="ml-4"><a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.facebook.com/milos.miljkovic.908"
+                                    class="border-b border-indigo-400 hover:border-indigo-800 text-indigo-800 text-lg font-semibold mb-1">Milos
+                                    Miljkovic</a>
+                                <p class="text-gray-700">Strukovni fizioterapeut</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="my-6 bg-white">
-                <div class="flex justify-center py-6">
-                    <span class="text-pink-500 border-pink-500 border-2 text-center rounded-full px-6 py-3"><a href="/"
-                            class="outline-none block capitalize">Zakazite
-                            Masazu</a></span>
-                </div>
-                <div class="w-full md:w-2/5 my-3 flex justify-center mx-auto" id="adb_v9"></div>
+            <div class="my-8 rounded bg-indigo-100 py-8 px-4 md:px-8">
+                <h2 class="text-2xl font-semibold">Da li vam je ovaj clanak pomogao?</h2>
+                <p class="text-gray-800 pt-1 pb-5">Ako jeste - kontaktirajte nas da razgovaramo o vašoj novoj poslovnoj
+                    ideji. Ako želite - možemo se naći na kafi.<a target="_blank" rel="noopener noreferrer"
+                        href="https://www.facebook.com/milos.miljkovic.90"
+                        class="border-b border-indigo-400 hover:border-indigo-800 text-indigo-800 text-lg font-semibold mb-1">
+                        Twitter</a>.</p>
+            </div>
+
+            <div class="py-3 mb-3">
+                <div class="border-b border-gray-200"></div>
             </div>
         </div>
-        <aside class="mt-3 p-2 w-full md:w-1/4 bg-white">
-            <div class="border rounded-md mb-6">
-                <div class="text-center font-bold text-blue-700 text-sm bg-gray-100 p-4">
-                    Featured Posts
-                </div>
-                <a href="https://hieworks.com/post/understanding-the-clear-difference-between-a-cv-and-resume/MTQ="
-                    class="outline-none">
-                    <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
-                        » Understanding the Clear Difference between a CV and Resume
-                    </div>
-                </a>
-                <a href="https://hieworks.com/post/ghana-parliament-june-2020-job-vacancies/Mw==" class="outline-none">
-                    <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
-                        » Ghana Parliament June 2020 Job Vacancies
-                    </div>
-                </a>
-                <a href="https://hieworks.com/post/12-reasons-why-your-cv-will-get-rejected/Mg==" class="outline-none">
-                    <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
-                        » 12 Reasons Why Your CV Will Get Rejected
-                    </div>
-                </a>
-                <a href="https://hieworks.com/post/how-to-write-an-outstanding-nursing-resume/MQ=="
-                    class="outline-none">
-                    <div class="text-sm text-gray-700 py-3 px-4 border-t hover:bg-purple-700 hover:text-white">
-                        » How to write an outstanding nursing resume
-                    </div>
-                </a>
-            </div>
-        </aside>
     </div>
-</div>
+</main>
 {{ end }}

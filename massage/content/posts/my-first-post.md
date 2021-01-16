@@ -1,6 +1,6 @@
 ---
 title: "Maderoterapija: Vodič kroz masažu drvenim elementima"
-date: 2021-01-05T01:08:59+01:00
+date: 2021-01-05 17:50
 draft: false
 image: "/img/madero.jpg"
 ---

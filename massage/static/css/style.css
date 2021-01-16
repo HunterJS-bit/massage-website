@@ -516,29 +516,26 @@ blockquote {
 
 /*** Articles **/
 
-#fb-share-button {
-  background: #3b5998;
-  border-radius: 3px;
-  font-weight: 600;
-  padding: 5px 8px;
-  display: flex;
+
+.slide-up {
+  animation: slide-up 2s;
 }
 
-#fb-share-button:hover {
-  cursor: pointer;
-  background: #213A6F
+@keyframes slide-up {
+  from {
+      
+      opacity: .25;
+      line-height: 200px;
+  }
+  to {
+      
+      opacity: 1;
+      line-height: 83px;
+  }
 }
 
-#fb-share-button svg {
-  width: 18px;
-  fill: white;
-  vertical-align: middle;
-  border-radius: 2px
-}
-
-#fb-share-button span {
-  vertical-align: middle;
-  color: white;
-  font-size: 14px;
-  padding: 0 3px
+.markdown > p {
+  font-weight: 300;
+  padding: 1em 0 ;
+  line-height: 1.5;
 }
