@@ -143,10 +143,9 @@ footer {
 }
 
 
-#navigation {
-  transition: height 0.3s  ease-out;
+#navbar-collapse a {
+  font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
 }
-
 
 #header.scroll #navigation a {
     color: #1a202c;
@@ -538,4 +537,11 @@ blockquote {
   font-weight: 300;
   padding: 1em 0 ;
   line-height: 1.5;
+}
+
+#main-header {
+  background-image: url('/img/home-slider.jpg');
+    color: black;
+    background-position: center;
+    background-size: cover;
 }

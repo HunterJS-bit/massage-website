@@ -1,51 +1,34 @@
-<div id="nav-border" class="container">
-    <nav id="header"
-        class="z-10 lg:absolute w-full flex items-center sm:bg-white lg:bg-transparent px-32 py-3 flex-wrap">
-        <a href="/" class="p-2 mr-4 inline-flex items-center">
-            <img width="150" class="max-w-full h-auto align-middle border-none" src="/img/logo.png">
-        </a>
-        <button
-            class="text-white inline-flex p-3 hover:bg-gray-100 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
-            id="menu">
-            <svg viewBox="0 0 100 80" fill="#222a3e" width="40" height="40">
-                <rect width="100" height="15"></rect>
-                <rect y="30" width="100" height="15"></rect>
-                <rect y="60" width="100" height="15"></rect>
-            </svg>
-        </button>
-        <div class="h-0 top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
-            <div
-                class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto sm:mt-3 lg:mt-0">
-                <a href="/"
-                    class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold md:text-gray-100 text-gray-800 hover:text-gray-500 focus:outline-none">
-                    <span>Home</span>
-                </a>
-                <a href="#therapy"
-                    class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold md:text-gray-100 text-gray-800 hover:text-gray-600 focus:outline-none">
-                    <span>Terapije</span>
-                </a>
-                <a href="#clients"
-                    class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold md:text-gray-100 text-gray-800 hover:text-gray-600 focus:outline-none">
-                    <span>Klijenti</span>
-                </a>
-                <a href="#team"
-                    class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold md:text-gray-100 text-gray-800 hover:text-gray-600 focus:outline-none">
-                    <span>O Nama</span>
-                </a>
-                <a href="/posts"
-                    class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold md:text-gray-100 text-gray-800 hover:text-gray-600 focus:outline-none">
-                    <span>Blog</span>
-                </a>
-                <a href="#gallery"
-                    class="lg:inline-flex lg:w-auto w-full px-3 py-2 flex items-center text-xs uppercase font-bold md:text-gray-100 text-gray-800 hover:text-gray-600 focus:outline-none">
-                    <span>Galerija</span>
-                </a>
-                <button type="button" onClick="navigate('#contact')"
-                    class="rounded-full bg-red-600 text-white active:bg-red-600 text-xs font-bold uppercase px-6 py-2 rounded contact-button hover:shadow-md outline-none focus:outline-none text-gray-100 lg:mr-1 lg:mb-0 ml-3 mb-3">
-                    Kontakt
+<nav class="bg-white py-2 md:py-4">
+    <div class="container px-5 mx-auto md:flex md:items-center">
 
-                </button></li>
-            </div>
+        <div class="flex justify-between items-center">
+            <a href="/"><img width="150" class="max-w-full h-auto align-middle border-none" src="/img/logo.png"></a>
+            <button
+                class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+                id="navbar-toggle">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                </svg>
+            </button>
         </div>
-    </nav>
-</div>
+
+        <div class="md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0 hidden" id="navbar-collapse">
+            <a href="/" class="p-2 lg:px-4 md:mx-2 text-white rounded bg-pink-400">Home</a>
+            <a href="/#therapy"
+                class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Usluge</a>
+            <a href="/#clients"
+                class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Klijenti</a>
+            <a href="/#team"
+                class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">O
+                Nama</a>
+            <a href="/posts"
+                class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Blog</a>
+            <a href="/#gallery"
+                class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Galerija</a>
+            <a href="/#contact"
+                class="p-2 lg:px-4 md:mx-2 text-pink-500 text-center border border-solid border-pink-500 rounded hover:bg-pink-500 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Kontakt</a>
+        </div>
+    </div>
+</nav>
