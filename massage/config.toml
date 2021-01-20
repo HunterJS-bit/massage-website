@@ -1,4 +1,4 @@
-baseURL = "http://nirvanacentar.com"
+baseURL = "http://localhost:80"
 languageCode = "en-us"
 title = "Nirvana Centar"
 paginate=5
@@ -36,7 +36,7 @@ summaryLength = 20
 
 [params]
     # My information
-    author = "Milos"
+    author = "HunterJSBit"
     description = "Massage website"
     bio = "Professional therapis"
     twitter = "massage"

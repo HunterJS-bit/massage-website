@@ -1,16 +1,14 @@
 {{ define "main" }}
-<main class="sm:pt-17 pt-12">
+<div class="sm:pt-5">
     <div class="mx-auto container">
-        <div>
-            <div class="my-5"><img class="rounded-lg mx-auto" src="{{ .Params.Image }}">
-            </div>
+        <div><img class="rounded-lg mx-auto" src="{{ .Params.Image }}">
         </div>
         <div class="xl:w-2/3 w-full mx-auto mb-10">
-            <p class="font-bold text-2xl md:text-3xl lg:text-4xl text-center text-gray-900 mt-10"> {{ .Title }}</p>
-            <section class="markdown mt-16 px-10">
+            <p class="font-bold text-2xl md:text-3xl lg:text-4xl text-center text-gray-900 mt-5"> {{ .Title }}</p>
+            <section class="markdown mt-6 px-5">
                 {{ .Content }}
             </section>
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center px-5">
                 <div>
                     <div>
                         <div class="flex items-center my-6">
@@ -53,7 +51,7 @@
                             </div>
                             <div class="ml-4"><a target="_blank" rel="noopener noreferrer"
                                     href="https://www.facebook.com/milos.miljkovic.908"
-                                    class="border-b border-indigo-400 hover:border-indigo-800 text-indigo-800 text-lg font-semibold mb-1">Milos
+                                    class="hover:border-gray-800 text-gray-800 text-lg font-semibold mb-1">Milos
                                     Miljkovic</a>
                                 <p class="text-gray-700">Strukovni fizioterapeut</p>
                             </div>
@@ -61,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            <div class="my-8 rounded bg-indigo-100 py-8 px-4 md:px-8">
+            <div class="rounded bg-indigo-100 py-8 px-4 md:px-8">
                 <h2 class="text-2xl font-semibold">Da li vam je ovaj clanak pomogao?</h2>
                 <p class="text-gray-800 pt-1 pb-5">Ako jeste - kontaktirajte nas da razgovaramo o vašoj novoj poslovnoj
                     ideji. Ako želite - možemo se naći na kafi.<a target="_blank" rel="noopener noreferrer"
@@ -75,5 +73,5 @@
             </div>
         </div>
     </div>
-</main>
+</div>
 {{ end }}
