@@ -1,0 +1,547 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+.main-section {
+    background-image: url('/img/header_image_massage.jpg');background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.main-section:before {
+    width: 100%;
+    float: left;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background: rgba(0,0,0,0.5);
+}
+
+
+h1 {
+ font-family: 'Dancing Script', Georgia, Times, serif;
+ font-size: 59px;
+ line-height: 60px;
+}
+ 
+p {
+ font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+ font-size: 18px;
+ line-height: 25px;
+ margin-top: 15px;
+}
+
+.social {
+   background-color: #222a3e; 
+}
+
+
+.blue-color {
+  color: #222a3e;
+}
+
+.about-title {
+    color: #222a3e;
+    font-size: 59px;
+    font-weight: 700;
+}
+
+.feature-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #fa5079;
+}
+
+.massage-card:hover {
+    transition: all 0.3s;
+    background-color: #fa5079;
+}
+
+.massage-card:hover .feature-icon svg {
+    fill: #fff;
+}
+
+.massage-card:hover .card-title {
+    color: #dedede;
+}
+
+.massage-card:hover .card-subtitle{
+    color: #eee;
+}
+
+.appointment-button{
+    font-size: 0.611em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    letter-spacing: 2.2px;
+    color: #FFFFFF;
+    background-color: #ff9bb3;
+    border: 1px solid #ff9bb3;
+    border-radius: 0px 0px 0px 0px;
+    padding: 24px 87px 24px 87px;
+    transition: all 0.7s;
+    outline: none;
+}
+
+.appointment-button:hover {
+    color: #ff9bb3;
+    background-color: transparent;
+    border-color: #ffff;
+}
+
+.blog-section {
+    background-color: #F8F8F8;
+}
+.blog-title {
+    font-family: 'Dancing Script', Georgia, Times, serif;
+}
+
+
+.checklist p.checklist-item:before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.25 7.105a.14.14 0 01-.193 0L2.459 3.6 0 5.999l3.597 3.508L6.154 12 16 2.397 13.539 0 6.25 7.105z' fill='%2355B891' fill-rule='evenodd'/%3E%3C/svg%3E");
+
+}
+
+footer {
+    background-color: #fff;
+}
+
+#header {
+  transition: height 0.3s  ease-out;
+}
+@media (max-width: 640px) {
+  #header.scroll  #navigation {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .scroll {
+      position: fixed;
+      height: 80px;
+      background: #fff;
+      box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  }
+}
+
+
+#navbar-collapse a {
+  font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+}
+
+#header.scroll #navigation a {
+    color: #1a202c;
+}
+
+#header.scroll #navigation .contact-button:hover {
+    color: #e05a7b;
+}
+
+.contact-button {
+    background: transparent;
+    border: 1px solid #e05a7b;
+    color: #fff;
+    background-color: #e05a7b;
+    letter-spacing: 1px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.contact-button:hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: #fff;
+}
+
+.bottom-contact:hover {
+    color: #e05a7b;
+}
+
+img.alignnone {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.line-ef {
+    max-width: 280px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.line-ef:before  {
+    position: absolute;
+    content: " ";
+    width: 100px;
+    height: 1px;
+    background-color: #c1bfda;
+    left: 0px;
+    top: 61%;
+}
+.line-ef:after {
+    position: absolute;
+    content: " ";
+    width: 100px;
+    height: 1px;
+    background-color: #c1bfda;
+    top: 61%;
+}
+.line-ef:after {
+    right: 0;
+}
+
+
+.about-section {
+    background-color: #fff8f5;
+    background-image: url('/img/about_cvece.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.testemonials {
+    background-image: url('/img/fizioterapija_klijenti.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
+}
+
+.gallery-images {
+    margin-top: -110px;
+}
+
+.pink-wrapper {
+    background-color: #fc84b4;
+}
+
+.color-pink {
+  color: #fb4d77;
+}
+
+.subheading {
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.contact {
+    background-image: url('/img/h1-parallax-3.jpg');
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+
+.bg-image {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+@media (min-width: 1024px) {
+    .top-navbar {
+      display: inline-flex !important;
+    }
+}
+
+.height-250 {
+    height: 250px;
+    overflow: visible;
+    background-color: #fff;
+    /* display: block; */
+}
+
+.slika {
+  opacity: 1;
+  transition: transform 5s cubic-bezier(0,1,.3,1),
+              opacity .5s ease-out;
+}
+
+@media screen and (min-device-width: 480px) {
+  .slika {
+    min-height: 400px;
+  }
+  .slika.is-visible {
+      opacity: 0;
+      transform: translateY(4em) rotateZ(-5deg);
+  }
+}
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-holder {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+blockquote {
+    width: 100%;
+    flex-shrink: 0;
+    height: 50%;
+    scroll-snap-align: start;
+    
+}
+
+@keyframes moveSlideshow {
+    100% { 
+      transform: translateX(-66.6666%);  
+    }
+  }
+
+
+  .modal {
+      display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 70px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /***** Slider **/
+
+
+  .mySlider {
+    position : relative;
+    display : block;
+    overflow : hidden;
+    width : 100%;
+    height : 450px;
+    max-height : 100%;
+    margin : 0 auto;
+  }
+  
+  .slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+    transition: transform 1600ms;
+    transform: scale(1);
+  }
+
+
+  .slide_img_01 {
+    left: 0;
+  }
+  
+  .slide_img_02 {
+    left: 100%
+  }
+
+
+  .control {
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    z-index: 55;
+  }
+  
+  .control label svg {
+    width : 48px;
+    height : 48px;
+    fill : #fff;
+    stroke : currentColor;
+    stroke-width : 0;
+  }
+  
+  .control label svg:hover {
+    transition : all .2s ease;
+    fill : #000;
+  }
+  
+  .control label {
+    z-index: 0;
+    display: none;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  
+  .control label:hover { opacity: 1.0; }
+  
+  .next { right: 1%; }
+  
+  .previous { left: 1%; }
+
+
+  .slider-pagination {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .slider-pagination label {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    margin: 0 2px;
+    border: solid 1px rgba(255,255,255,0.4);
+    cursor: pointer;
+  }
+  
+  .slide-radio1:checked ~ .next .numb2, .slide-radio2:checked ~ .next .numb1, .slide-radio2:checked ~ .previous .numb1, .slide-radio1:checked ~ .previous .numb2 {
+    display: block;
+    z-index: 1
+  }
+  
+  .slide-radio1:checked ~ .slider-pagination .page1, .slide-radio2:checked ~ .slider-pagination .page2 { background: rgba(255,255,255,1) }
+
+
+  .slide-radio1:checked ~ .slider { transform: translateX(0%); }
+
+.slide-radio2:checked ~ .slider { transform: translateX(-100%); }
+
+@media only screen and (max-width: 767px) {
+
+    .mySlider {
+      position : relative;
+      width : 100%;
+      height : 550px;
+    }
+    
+    .slider > div { padding: 0 2% }
+    
+    .control {
+      position: absolute;
+      top: 60%;
+      margin-top: -24px;
+      z-index: 55;
+    }
+    
+    .control label svg {
+      width : 32px;
+      height : 32px;
+      fill : #fff;
+      stroke : currentColor;
+      stroke-width : 0;
+    }
+}
+
+#slider_1 {
+    visibility: hidden;
+}
+
+#slider_2 {
+    visibility: hidden;
+}
+
+
+/*** Articles **/
+
+
+.slide-up {
+  animation: slide-up 2s;
+}
+
+@keyframes slide-up {
+  from {
+      
+      opacity: .25;
+      line-height: 200px;
+  }
+  to {
+      
+      opacity: 1;
+      line-height: 83px;
+  }
+}
+
+.markdown > p {
+  font-weight: 300;
+  padding: 1em 0 ;
+  line-height: 1.5;
+}
+
+#main-header {
+  background-image: url('/img/home-slider.jpg');
+    color: black;
+    background-position: center;
+    background-size: cover;
+}

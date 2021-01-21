@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nirvana Centar</title>
+    <link>http://localhost:80/</link>
+    <description>Recent content on Nirvana Centar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jan 2021 01:10:03 +0100</lastBuildDate>
+    
+	<atom:link href="http://localhost:80/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Šta je zapravo klinička masaža?</title>
+      <link>http://localhost:80/posts/my-second-post/</link>
+      <pubDate>Tue, 05 Jan 2021 01:10:03 +0100</pubDate>
+      
+      <guid>http://localhost:80/posts/my-second-post/</guid>
+      <description>Sledeća tema za diskusiju - Šta je klinička masaža! U ljusci oraha to je masaža koja naglašava specifična područja lečenja sa fokusom na korišćenje praksi zasnovanih na dokazima kako bi se ublažio bol, povećala cirkulacija, povećao opseg pokreta i, u celini, osećate bolje!</description>
+    </item>
+    
+    <item>
+      <title>DA LI MASAŽA MOŽE POMOĆI DA IZGUBITE KILOGRAME ?</title>
+      <link>http://localhost:80/posts/my-fourth-post/</link>
+      <pubDate>Tue, 05 Jan 2021 01:08:59 +0100</pubDate>
+      
+      <guid>http://localhost:80/posts/my-fourth-post/</guid>
+      <description>Da li vam masaža može pomoći da izgubite kilograme? Masažom obično tretiramo vašu kožu, mišiće i druga tkiva i ima različite benefite za vaš organizam.</description>
+    </item>
+    
+    <item>
+      <title>Duboke masaže tkiva: savršen kraj vašeg januarskog treninga</title>
+      <link>http://localhost:80/posts/six-post/</link>
+      <pubDate>Tue, 05 Jan 2021 01:08:59 +0100</pubDate>
+      
+      <guid>http://localhost:80/posts/six-post/</guid>
+      <description>Šta je duboka masaža tkiva i kako mogu da pomognu mom telu da se popravi? Ako ovog januara jako udarate u teretanu, ne zaboravite da budete ljubazni prema svojim mišićima!</description>
+    </item>
+    
+    <item>
+      <title>Kardio ili trening snage: Šta je efikasnije u postizanju vaših ciljeva?</title>
+      <link>http://localhost:80/posts/my-third-post/</link>
+      <pubDate>Tue, 05 Jan 2021 01:08:59 +0100</pubDate>
+      
+      <guid>http://localhost:80/posts/my-third-post/</guid>
+      <description>Suočeni smo sa ovom dilemom svaki put kada kročimo nogom u teretanu: Krenite pravo prema tegovima ili napravite let do poslednjeg dostupnog eliptičnog?</description>
+    </item>
+    
+    <item>
+      <title>Koja vrsta vežbanja je najzdravija?</title>
+      <link>http://localhost:80/posts/fifth-post/</link>
+      <pubDate>Tue, 05 Jan 2021 01:08:59 +0100</pubDate>
+      
+      <guid>http://localhost:80/posts/fifth-post/</guid>
+      <description>Fizička aktivnost se danas smatra jednim od „velikih četiri“ faktora životnog stila (zajedno sa pušenjem, ishranom i zloupotrebom droga) koji imaju velike efekte na zdravlje.</description>
+    </item>
+    
+    <item>
+      <title>Maderoterapija: Vodič kroz masažu drvenim elementima</title>
+      <link>http://localhost:80/posts/my-first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:80/posts/my-first-post/</guid>
+      <description>Maderoterapija je vid alternativne terapije koji se sprovodi različitim drvenim elementima, a kod nas popularizovana kao vid najefikasnije anticelulit masaže. Ideja o maderoterapiji potiče iz orjentalne kulture,.</description>
+    </item>
+    
+  </channel>
+</rss>
