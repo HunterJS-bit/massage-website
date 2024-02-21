@@ -2,7 +2,7 @@
 title: "Kardio ili trening snage: Šta je efikasnije u postizanju vaših ciljeva?"
 date: 2021-01-05T01:08:59+01:00
 draft: false
-image: "/images/book.jpg"
+image: "/img/galerija_fizioterapija.jpg"
 ---
 
 Suočeni smo sa ovom dilemom svaki put kada kročimo nogom u teretanu: Krenite pravo prema tegovima ili napravite let do poslednjeg dostupnog eliptičnog?

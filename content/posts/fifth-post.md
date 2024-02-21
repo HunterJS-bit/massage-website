@@ -2,7 +2,7 @@
 title: "Koja vrsta vežbanja je najzdravija?"
 date: 2021-01-05T01:08:59+01:00
 draft: false
-image: "/images/book.jpg"
+image: "/img/galerija_masaza.jpg"
 ---
 
 Fizička aktivnost se danas smatra jednim od „velikih četiri“ faktora životnog stila (zajedno sa pušenjem, ishranom i zloupotrebom droga) koji imaju velike efekte na zdravlje. 2015. godine, Akademija medicinskih kraljevskih koledža objavila je izveštaj u kojem se sumiraju blagodati vežbanja, nazivajući je „čudotvornim lekom“ i „čudesnim lekom“. [1] Izveštaj primećuje da redovno vežbanje može da spreči demenciju, dijabetes tipa 2, neke karcinome, depresiju, bolesti srca i druga uobičajena ozbiljna stanja - smanjujući rizik od svakog od njih za najmanje 30%. Ovo je bolje od mnogih lekova.

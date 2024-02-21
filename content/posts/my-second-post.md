@@ -2,7 +2,7 @@
 title: "Šta je zapravo klinička masaža?"
 date: 2021-01-05T01:10:03+01:00
 draft: false
-image: "/images/book.jpg"
+image: "/img/default_massage.jpg"
 ---
 
 
