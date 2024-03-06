@@ -39,6 +39,11 @@ To run this website locally, follow these steps:
 
 5. **View Website**: Open your web browser and navigate to `http://localhost:1313` to view the massage therapy website.
 
+
+# Deployment Notes:
+
+For deploying to cPanel hosting. Just run the `hugo` command, it will generate `public folder`, just copy the public folder to your www folder in cPanel
+
 ## Contributing
 
 Contributions to enhance and improve the website are welcome. If you find any issues or have suggestions for new features, please open an issue or submit a pull request.
